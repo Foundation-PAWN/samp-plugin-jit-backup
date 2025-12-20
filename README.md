@@ -1,10 +1,6 @@
 [JIT plugin][github]
 ====================
 
-[![Version][version_badge]][version]
-[![Build Status][build_status]][build]
-[![Build Status - Windows][build_status_win]][build_win]
-
 This plugin is an implementation of a just-in-time (JIT) compiler for Pawn.
 It compiles AMX bytecode into native x86 code on the fly and hooks into the
 AMX API called by the SA-MP server to replace the VM's interpreter.
@@ -112,7 +108,7 @@ Anything that doesn't use `#emit` will probably work perfectly fine.
 Otherwise, it depends on the code. There are some advanced `#emit` hacks 
 that simply won't work with this JIT. Self-modifying code is one example 
 (although in some caes it's possible to fix, see 
-[Detecting JIT at runtime][wiki-detecting]).
+Detecting JIT at runtime {this link isn't available anymore}).
 
 If you're using [YSI][ysi] this plugin most likely will not work for you and
 will simply crash your server. However, with the recent versions of YSI this
@@ -146,15 +142,8 @@ License
 
 Licensed under the 2-clause BSD license. See [LICENSE.txt](LICENSE.txt).
 
-[github]: https://github.com/Zeex/samp-plugin-jit
-[version]: http://badge.fury.io/gh/Zeex%2Fsamp-plugin-jit
-[version_badge]: https://badge.fury.io/gh/Zeex%2Fsamp-plugin-jit.svg
-[build]: https://travis-ci.org/Zeex/samp-plugin-jit
-[build_status]: https://travis-ci.org/Zeex/samp-plugin-jit.svg?branch=master
-[build_win]: https://ci.appveyor.com/project/Zeex/samp-plugin-jit/branch/master
-[build_status_win]: https://ci.appveyor.com/api/projects/status/v1duwc12h7vq4vvu/branch/master?svg=true
-[download]: https://github.com/Zeex/samp-plugin-jit/releases
+[github]: https://github.com/Foundation-PAWN/samp-plugin-jit-backup
+[download]: https://github.com/Foundation-PAWN/samp-plugin-jit-backup/releases
 [asmjit]: https://github.com/kobalicek/asmjit
-[wiki-detecting]: https://github.com/Zeex/samp-plugin-jit/wiki/Detecting-JIT-at-runtime
 [ysi]: https://github.com/Y-Less/YSI
-[crashdetect]: https://github.com/Zeex/samp-plugin-crashdetect
+[crashdetect]: https://github.com/AmyrAhmady/samp-plugin-crashdetect
